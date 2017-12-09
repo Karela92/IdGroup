@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "TextBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/TextRuss/Tele2RussiaText-Bold.eot");
+  src: url("../fonts/TextRuss/Tele2RussiaText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TextRuss/Tele2RussiaText-Bold.woff") format("woff"), url("../fonts/TextRuss/Tele2RussiaText-Bold.ttf") format("truetype");
+}

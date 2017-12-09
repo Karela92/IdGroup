@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>sess2</title>
+    <link rel="stylesheet" href="/css/libs.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+      <div class="main">
+      <!-- Контейнер со всем содержимым -->
+        <div class="content">
+        <!-- Меню Контейнера -->
+          <div class="content__menu">
+            <ul>
+              <li><a href="#">Личный кабинет</a></li>
+              <li><a href="#">Платежи</a></li>
+              <li><a href="#">История платежей</a></li>
+              <li><a href="#">Настройки</a></li>
+              <li><a href="#">Выйти</a></li>
+            </ul>
+          </div>
+        <!-- Конец Меню -->
+        <!--Контейнер с заполнением карты  -->
+          <div class="container">
+            <a href="#my-menu" class="hamburger hamburger--squeeze"> 
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </a>
+            <nav id="my-menu">  
+              <div class="content__menu">
+                <ul>
+                  <li><a href="#">Личный кабинет</a></li>
+                  <li><a href="#">Платежи</a></li>
+                  <li><a href="#">История платежей</a></li>
+                  <li><a href="#">Настройки</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+            </nav>
+            <div class="container__pay">
+              <div class="container__pay__about">
+                <div class="container__pay__about__info">Информация по оплате:</div>
+                <div class="container__pay__about__numsumm"><span>Номер счета:</span>87123658716587</div>
+                <div class="container__pay__about__numsumm"><span>Сумма платежа:</span>100 руб.</div>
+              </div>
+              <h3>Данные банковской карты</h3>
+            <!-- Заполнение номера карт-->
+              <div class="container__pay__block">
+              <!-- Первая Карта -->
+              <form>
+                <div class="container__pay__block__filling">
+                  <span class="container__pay__block__filling__number">Номер карты</span>
+                  <div class="container__pay__block__filling__inputs__code">
+                    <input type="text" oninput="validateNumber(this)" minlength="4" maxlength="4" required />
+                    <input type="text" oninput="validateNumber(this)" minlength="4" maxlength="4" required />
+                    <input type="text" oninput="validateNumber(this)" minlength="4" maxlength="4" required />
+                    <input type="text" oninput="validateNumber(this)" minlength="4" maxlength="4" required />
+                  </div>
+                  <span class="container__pay__block__filling__date">Срок действия</span>
+                  <div class="container__pay__block__filling__inputs__date">
+                    <div><input type="text" value="04" class="container__pay__block__filling__inputs__date__first" required /><i class="fa fa-angle-down"></i></div>
+                    <div><input type="text" value="2018" class="container__pay__block__filling__inputs__date__second" required /><i class="fa fa-angle-down"></i></div>
+                  </div>
+                  <div class="container__pay__block__filling__inputs__card">
+                    <input type="text" oninput="validateNumber(this)" minlength="4" placeholder="Держатель карты" required />
+                  </div>
+                </div>
+              <!-- Конец Первой карты -->
+              <!-- Вторая Карта -->
+                <div class="container__pay__block__cvv">
+                  <div class="container__pay__block__cvv__line"></div>
+                  <div class="container__pay__block__cvv__code">
+                    <span>Код CVV2 / CVC2</span>
+                  </div>
+                  <div class="container__pay__block__cvv__input">
+                    <input type="text" id="input__cvv" oninput="validateCVV(this)" minlength="3" maxlength="3" required />
+                  </div>
+                </div>
+              <!-- Конец Второй карты -->
+                <div class="container__pay__block__submit">
+                  <input type="submit" value="Отправить">
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--Конец заполнения карт-->
+            <div class="container__paragraph">
+              <p>
+                Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+              </p>
+              <p>
+                Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+              </p>
+              <p>
+                Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+              </p>
+              <p>
+                Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+              </p>
+            </div>
+          </div>
+        <!--Конец контейнера с заполнением карты -->
+        </div>
+      <!-- Конец Контейнера -->
+      </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

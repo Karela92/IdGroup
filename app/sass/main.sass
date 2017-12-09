@@ -1,0 +1,228 @@
+@import 'smart-grid'
+@import 'fonts'
+@import 'vars'
+@import 'libs'
+
++reset()
+
+body
+  font-family: Arial
+	
+// При клике на ссылки добавляем класс 'active'
+.active
+	background-color: #2a2d37
+	color: #575b65 !important
+	transition: all .25s
+//
+
+//Оформление Гамбургер-меню
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	background-color: black
+	border-radius: 0
+	width: 36px
+	height: 2px
+
+.hamburger-box, .hamburger
+	display: none
+
+.mm-menu.mm-theme-black .mm-listview > li a:not(.mm-next)
+	color: white
+	font-size: 16px
+	transition: all .75s
+	&:hover
+		color: wheat
+//
+
+input
+	outline: none
+  
+.main
+	+wrapper()
+	max-width: 1200px
+	min-width: 320px
+	background-color: black
+	padding: 80px 115px 80px 120px
+	.content
+		+row-flex()
+		color: white
+		width: 100%
+		align-items: flex-start
+		margin: 0
+		padding: 0
+		//Оформление менюшки
+		&__menu
+			+col()
+			+col-4()
+			margin: 0
+			padding: 0
+			background-color: #1f2229
+			li
+				a
+					text-decoration: none
+					padding: 30px 0 28px 29px
+					cursor: pointer
+					text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+					font-size: 18px
+					font-weight: 700
+					line-height: 24px
+					display: block
+					color: white
+		// 
+
+// Основной контейнер
+.container
+	+col()
+	+col-8()
+	margin: 0
+	padding: 0
+	color: #8494ab
+	font-family: Arial
+	font-size: 16px
+	font-weight: 400
+	line-height: 21px
+	position: relative
+	&__pay
+		background-color: #f7f8f8
+		padding: 45px 45px 45px 30px
+		&__about__info
+			margin-bottom: 22px
+		&__about__numsumm
+			margin-top: 10px
+			color: black
+			span
+				width: 35%
+				display: inline-block
+				color: #8494ab
+		h3
+			color: #383d43
+			font-family: "Open Sans"
+			font-size: 22px
+			font-weight: 700
+			line-height: 25px
+			margin-top: 35px
+			margin-bottom: 22px
+		&__block
+			position: relative
+			&__filling
+				+col()
+				+col-8()
+				margin: 0
+				padding: 24px 15px 13px 15px
+				background-color: #f7f8f8
+				border: 1px solid #e4e9ee
+				border-radius: 10px
+				position: relative
+				z-index: 2
+				&__inputs__code	input
+					width: 21%
+					margin-top: 6px
+					margin-right: 5px
+					padding-left: 8px
+					height: 40px
+					border: 1px solid #e4e9ee
+				&__date
+					margin-top: 17px
+					margin-bottom: 5px
+					display: block
+				&__inputs__date
+					div
+						display: inline
+						position: relative
+						.fa
+							position: absolute
+							right: 10px
+							top: 0
+							color: #bec6cf
+							font-size: 22px
+							cursor: pointer
+						input
+							margin-right: 5px
+							height: 40px
+							border: 1px solid #e4e9ee
+							padding-left: 10px
+					&__first
+						width: 25%
+					&__second
+						width: 30%
+				&__inputs__card
+					margin-top: 20px
+					input
+						color: #8494ab
+						width: 100%
+						margin-right: 5px
+						padding-left: 8px
+						height: 40px
+						border: 1px solid #e4e9ee
+			&__cvv
+				+col()
+				+col-8()
+				margin: 0
+				padding-top: 25px
+				padding-bottom: 85px
+				background-color: #f7f8f8
+				border: 1px solid #e4e9ee
+				border-radius: 10px
+				position: absolute
+				top: 20px
+				right: 0
+				&__line
+					background-color: #e4e9ee
+					padding-top: 42px
+				&__code
+					margin-top: 16px
+					margin-right: 25px
+					display: flex
+					flex-direction: row-reverse
+				&__input
+					display: flex
+					flex-direction: row-reverse
+					margin-right: 15px
+					margin-top: 6px
+					position: relative
+					&:after
+						content: '?'
+						padding-left: 7px
+						width: 15px
+						height: 23px
+						border-radius: 50%
+						border: 1px solid #c0c7d0
+						position: absolute
+						right: 15px
+						top: 8px
+						cursor: pointer
+					input
+						width: 45%
+						height: 40px
+						border: 1px solid #e4e9ee
+						padding-left: 8px
+			&__submit
+				margin-top: 30px
+				input
+					background-color: #005abf;
+					background-image: linear-gradient(to top, rgba(37, 36, 35, 0.03) 0%, transparent 100%)
+					border-radius: 20px
+					border: none
+					color: white;
+					font-family: "Open Sans"
+					font-size: 14px
+					font-weight: 700
+					line-height: 18px
+					padding: 12px 30px
+					cursor: pointer
+					outline: none
+	// Работа с текстовым блоком
+	&__paragraph
+		background-color: #373c43
+		padding: 12px 45px 31px 29px
+		p
+			margin-top: 10px
+			color: #89909d
+			font-family: Arial
+			font-size: 12px
+			font-weight: 400
+			line-height: 18px
+	// Конец контейнера
+	
+@import 'media'
+		
+  
