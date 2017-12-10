@@ -1,0 +1,47 @@
+.content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.content::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.content__menu {
+  float: left;
+}
+
+.container {
+  float: left;
+}
+
+.hamburger {
+  display: none;
+}
+
+.container__pay__block__cvv__code {
+  float: right;
+}
+
+.container__pay__block__cvv__input {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.container__pay__block__cvv__input input {
+  float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .container__pay__block__cvv {
+    padding-bottom: 140px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    display: inline-block;
+  }
+}

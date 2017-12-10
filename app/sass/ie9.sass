@@ -1,0 +1,33 @@
+@import 'smart-grid'
+
+.content
+	+row-float()
+	&__menu
+		+col-float()
+
+.container
+	+col-float()
+
+.hamburger
+	display: none
+
+.container__pay__block__cvv__code
+	float: right
+
+.container__pay__block__cvv__input
+	float: right
+	margin-bottom: 20px
+	& input
+		float: right
+
+@media only screen and (max-width : 768px)
+
+	.container__pay__block__cvv
+		padding-bottom: 140px
+		
+@media only screen and (max-width : 480px)
+	
+	.hamburger
+		display: inline-block
+		
+  
