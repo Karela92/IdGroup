@@ -46,6 +46,12 @@ $(function(){
 	  alert('Платеж прошел успешно');
 	});
 
+/*
+function errorEnt(){
+	var submitButt = document.querySelector('.container__submit').onclick 
+}
+*/
+
 });
 
 function validateNumber(input) {
